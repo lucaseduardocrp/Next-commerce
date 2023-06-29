@@ -9,9 +9,7 @@ export const getStaticProps: GetStaticProps = async () => {
   return { props: { products } }
 }
 
-const Products: NextPage = (props: {
-  products?: ProductType[]
-}) => {
+export default function Products<NextPage>(props: { products?: ProductType[] }) {
   return (
     <>
       <Head>
@@ -32,5 +30,3 @@ const Products: NextPage = (props: {
     </>
   )
 }
-
-export default Products

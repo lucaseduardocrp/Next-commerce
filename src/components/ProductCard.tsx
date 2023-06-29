@@ -17,7 +17,7 @@ export default function ProductCard({ product }: ProductCardProps) {
     <>
       <Card>
         <Link href={`/products/${id}`}>
-          <Image className="card-img-top" src={imageUrl} alt="Product" height={500} width={600} />
+          <Image className="card-img-top" src={imageUrl} alt="Product" height={200} width={200} />
         </Link>
 
         <CardBody>
